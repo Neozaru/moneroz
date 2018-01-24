@@ -13,9 +13,11 @@ package() {
 
 # TODO: Fix monero-git to not crash when repository already exists
 rm -Rf monero-git-packager/monero
-
 package monero-git-packager
+
+rm -Rf monero-gui-git-packager/monero-gui
 package monero-gui-git-packager
+
 package kovri-git-packager
 
 pushd $CUSTOM_REPOSITORY_LOCATON && repo-remove moneroz.db.tar.gz ; repo-add moneroz.db.tar.gz *.pkg.tar.xz ; popd
