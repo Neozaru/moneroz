@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-MAKEFLAGS="$( grep -c ^processor /proc/cpuinfo )"
-
 BASE_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BUILD_DIRECTORY=$PWD/build
 
