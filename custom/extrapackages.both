@@ -4,12 +4,7 @@ xf86-video-intel
 xf86-video-nouveau
 xorg-server
 xfce4
-boost-libs
-zeromq
-unbound
-miniupnpc
-qt5-quickcontrols
-qt5-quickcontrols2
-qt5-graphicaleffects
+monero-git
+monero-wallet-qt-git
 kovri-git
 firefox

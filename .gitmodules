@@ -9,8 +9,8 @@
 	path = kovri-git-packager
 	url = https://github.com/Neozaru/kovri-git-packager
 [submodule "monero-git-packager"]
-  path = monero-git-packager
-  url = https://aur.archlinux.org/monero-git.git
-[submodule "monero-wallet-gui-git-packager"]
-  path = monero-wallet-gui-git-packager
+	path = monero-git-packager
+	url = https://aur.archlinux.org/monero-git.git
+[submodule "monero-gui-git-packager"]
+  path = monero-gui-git-packager
   url = https://aur.archlinux.org/monero-wallet-qt-git.git
