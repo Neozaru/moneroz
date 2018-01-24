@@ -1,9 +1,9 @@
 FROM base/archlinux
 
-RUN pacman --noconfirm -Sy
-RUN pacman --noconfirm -S git boost
+RUN pacman --noconfirm -Syu
+RUN pacman --noconfirm -S git boost vim tree
 
 RUN git clone https://github.com/Neozaru/moneroz --recursive
 
 WORKDIR moneroz
-ENTRYPOINT ["/moneroz/buildISO.sh"]
+CMD ["/moneroz/buildISO.sh"]
