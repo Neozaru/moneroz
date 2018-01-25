@@ -2,9 +2,10 @@
 set -e
 
 BASE_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-CUSTOM_REPOSITORY_LOCATON=$BASE_DIRECTORY/custom/repository/
+CUSTOM_REPOSITORY_LOCATON=$BASE_DIRECTORY/custom/repository
 export MAKEFLAGS="-j $( grep -c ^processor /proc/cpuinfo )"
 
+mkdir -p $CUSTOM_REPOSITORY_LOCATON
 
 package() {
   pushd $1 && git clean -fd && makepkg -f ; popd
@@ -15,5 +16,4 @@ package monero-git-packager
 package monero-gui-git-packager
 package kovri-git-packager
 
-mkdir -p $CUSTOM_REPOSITORY_LOCATON
 pushd $CUSTOM_REPOSITORY_LOCATON && repo-remove moneroz.db.tar.gz ; repo-add moneroz.db.tar.gz *.pkg.tar.xz ; popd
