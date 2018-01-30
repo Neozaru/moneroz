@@ -5,12 +5,12 @@
 	path = monero-gui
 	url = https://github.com/monero-project/monero-gui
   branch = release-v0.11.1.0
-[submodule "kovri-git-packager"]
-	path = kovri-git-packager
-	url = https://github.com/Neozaru/kovri-git-packager
-[submodule "monero-git-packager"]
-	path = monero-git-packager
-	url = https://aur.archlinux.org/monero-git.git
-[submodule "monero-gui-git-packager"]
-  path = monero-gui-git-packager
-  url = https://aur.archlinux.org/monero-wallet-qt-git.git
+[submodule "kovri-packager"]
+	path = kovri-packager
+	url = https://github.com/Neozaru/kovri-git-archlinux-package-generic
+[submodule "monero-packager"]
+	path = monero-packager
+	url = https://github.com/Neozaru/monero-git-archlinux-package-generic
+[submodule "monero-gui-packager"]
+	path = monero-gui-packager
+	url = https://github.com/Neozaru/monero-gui-git-archlinux-package-generic

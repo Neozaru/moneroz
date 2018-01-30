@@ -1,0 +1,16 @@
+xf86-input-synaptics
+xf86-video-vesa
+xf86-video-ati
+xf86-video-intel
+xf86-video-nouveau
+xorg-server
+xfce4
+wpa_supplicant
+networkmanager
+networkmanager-openvpn
+network-manager-applet
+monero-all-git-generic
+kovri-git-generic
+firefox
+gdb
+valgrind

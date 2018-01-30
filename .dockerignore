@@ -1,2 +1,6 @@
 build
-archiso
+./**/pkg
+./**/src
+./**/*pkg.tar.xz
+./**/.git
+.git
