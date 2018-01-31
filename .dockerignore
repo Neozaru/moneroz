@@ -1,6 +1,7 @@
-./build
-./**/pkg
-./**/src
-./**/*pkg.tar.xz
-./**/.git
+build
+repository
+**/pkg
+**/src
+**/*pkg.tar.xz
+**/.git
 .git

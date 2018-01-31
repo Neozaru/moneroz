@@ -11,6 +11,6 @@ RUN printf 'builduser ALL=(ALL) ALL\n' | tee -a /etc/sudoers
 USER builduser
 WORKDIR /home/builduser
 ADD . ./
-RUN sudo chown -R builduser ./{repository,*-packager}
+RUN sudo chown -R builduser ./*-packager
 
 CMD ["make"]
