@@ -1,13 +1,9 @@
 [submodule "archiso"]
 	path = archiso
 	url = https://git.archlinux.org/archiso.git/
-[submodule "monero-gui"]
-	path = monero-gui
-	url = https://github.com/monero-project/monero-gui
-  branch = release-v0.11.1.0
 [submodule "kovri-packager"]
 	path = kovri-packager
 	url = https://github.com/Neozaru/kovri-git-archlinux-package-generic
-[submodule "monero-gui-packager"]
-	path = monero-gui-packager
-	url = https://github.com/Neozaru/monero-gui-git-archlinux-package-generic
+[submodule "monero-all-packager"]
+	path = monero-all-packager
+	url = https://github.com/Neozaru/monero-all-git-archlinux-package-generic
