@@ -8,9 +8,6 @@
 [submodule "kovri-packager"]
 	path = kovri-packager
 	url = https://github.com/Neozaru/kovri-git-archlinux-package-generic
-[submodule "monero-packager"]
-	path = monero-packager
-	url = https://github.com/Neozaru/monero-git-archlinux-package-generic
 [submodule "monero-gui-packager"]
 	path = monero-gui-packager
 	url = https://github.com/Neozaru/monero-gui-git-archlinux-package-generic

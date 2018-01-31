@@ -35,9 +35,10 @@ cp -R $CUSTOMIZATIONS_DIRECTORY/root.append/* $TARGET_SYSTEM_ROOT/
 cat $CUSTOMIZATIONS_DIRECTORY/customize_airootfs.sh.append >> $TARGET_SYSTEM_ROOT/root/customize_airootfs.sh
 
 # Override mkinitcpio
-cp $CUSTOMIZATIONS_DIRECTORY/mkinitcpio.conf.replace $BUILD_DIRECTORY/moneroz
+cp $CUSTOMIZATIONS_DIRECTORY/mkinitcpio.conf.replace $BUILD_DIRECTORY/moneroz/mkinitcpio.conf
 
 pushd $BUILD_DIRECTORY/moneroz &&
+   rm -rf work &&
   ./build.sh -N moneroz -V 0.0.1 -L MONEROZ_0.0.1 -D moneroz -o $BUILD_DIRECTORY/ -v ;
   popd
 

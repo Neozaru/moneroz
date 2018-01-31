@@ -1,5 +1,4 @@
-groupadd sudoers
-useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel,sudoers" -s /usr/bin/bash user
+useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/bash user
 cp -aT /etc/skel/ /home/user/
 cp -aT /usr/share/kovri/ /home/user/.kovri/ || :
 # Desktop shortcuts
