@@ -1,8 +1,9 @@
 useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/bash user
+printf 'user ALL=(ALL) ALL\n' | tee -a /etc/sudoers
 cp -aT /etc/skel/ /home/user/
 cp -aT /usr/share/kovri/ /home/user/.kovri/ || :
 # Desktop shortcuts
-mkdir -p /home/user/Desktop/ && cp /etc/skel/.local/share/applications/* /home/user/Desktop/
+#chmod +x /home/user/Desktop/*.desktop
 chown -R user /home/user/
 systemctl set-default graphical.target
 systemctl enable NetworkManager.service

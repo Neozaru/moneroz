@@ -4,6 +4,5 @@ Type=Application
 Exec=/usr/bin/monero-wallet-gui
 Icon=/usr/share/icons/monero-symbol-1280.png
 StartupNotify=false
-Categories=X-Folders;
 Name=Monero Wallet
 Comment=Monero Wallet

@@ -5,6 +5,7 @@ xf86-video-intel
 xf86-video-nouveau
 xorg-server
 xfce4
+xfce4-battery-plugin
 wpa_supplicant
 networkmanager
 networkmanager-openvpn
